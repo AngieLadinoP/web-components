@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styles custom properties</title>
+    <style>
+      my-element {
+        --primary-color: DeepSkyBlue;
+        --secondary-color: Plum;
+        --heading-primary: 40px;
+        --heading-secondary: 20px;
+      }
+      my-element.dark {
+        --primary-color: rgb(24, 85, 104);
+        --secondary-color: rgb(102, 8, 102);
+        --heading-primary: 40px;
+        --heading-secondary: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <my-element>
+      <span slot="title">Test title 1</span>
+      <span slot="body">Test paragraph</span>
+    </my-element>
+    <my-element class="dark">
+      <span slot="title">Test title 1</span>
+      <span slot="body">Test paragraph</span>
+    </my-element>
+    <script type="module" src="./my-element.js"></script>
+  </body>
+</html>
