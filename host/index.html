@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage content slot</title>
+  </head>
+  <body>
+    <my-element>
+      <span slot="title">Test title 1</span>
+      <span slot="body">Test paragraph</span>
+    </my-element>
+    <my-element class="red">
+      <span slot="title">Test title 2</span>
+      <span slot="body">Test paragraph</span>
+    </my-element>
+    <my-element green>
+      <span slot="title">Test title 3</span>
+      <span slot="body">Test paragraph</span>
+    </my-element>
+    <article class="card">
+      <my-element>
+        <span slot="title">Test title 3</span>
+        <span slot="body">Test paragraph</span>
+      </my-element>
+    </article>
+
+    <script type="module" src="./my-element.js"></script>
+  </body>
+</html>
